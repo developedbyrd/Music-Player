@@ -300,7 +300,7 @@ body {
 #volume-output {
   display: flex;
   font-size: 20px;
-  right: -14rem;
+  left: 14rem !important;
   width: 32px;
   position: relative;
   justify-content: center;
@@ -594,25 +594,25 @@ body {
   }
 
   .musicController {
-    height: 169px;
-    top: 80%;
+    height: 220px !important;
+    top: 72% !important;
   }
 
   .buttons {
     position: relative;
-    top: 5rem !important;
+    top: 2.5rem !important;
   }
 
   .shuffle, .play, .repeat {
     position: relative;
     left: -14rem !important;
-    top: -2.5rem;
+    top: -4rem !important;
   }
 
   #current-time, .timeSlider, #total-duration {
     position: relative;
     left: -9rem !important;
-    top: -1.5rem;
+    top: -3rem !important;
   }
 
   #current-time {
@@ -627,7 +627,7 @@ body {
 
   .slideContainer {
     position: relative;
-    top: -1.6rem;
+    top: -3rem !important;
     left: 2rem !important;
   }
 
@@ -641,9 +641,7 @@ body {
   }
 
   .slideContainer #volume-output {
-    position: relative;
-    left: 13rem;
-    justify-content: center;
+    transform: translateX(-1rem);
   }
 }
 
@@ -656,6 +654,13 @@ body {
 @media screen and (min-width: 416px) {
   .buttons {
     margin-bottom: -1rem;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  #volume-output {
+    position: relative;
+    left: 16rem !important;
   }
 }
 
@@ -719,6 +724,29 @@ body {
   .slideContainer #volume-output {
     position: relative;
     left: 16rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .slideContainer #volume-output {
+    position: relative;
+    left: 12rem !important;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 704px) {
+  .slideContainer #volume-output {
+    position: relative;
+    left: 13rem !important;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .slideContainer #volume-output {
+    position: relative;
+    left: 13rem;
     justify-content: center;
   }
 }
@@ -907,6 +935,13 @@ body {
 
   .slideContainer #volume-output {
     padding-right: 0rem;
+  }
+}
+
+@media screen and (min-width: 1074px) {
+  .slideContainer #volume-output {
+    position: relative;
+    left: 14rem !important;
   }
 }
 
