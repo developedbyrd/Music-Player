@@ -25,7 +25,7 @@ let isMuted = false;
 const tracks = [
   {
     bgColor: ["#4F4F4F", "#222222"],
-    accentColor: '#0396FF',
+    accentColor: '#d3c8c8',
     name: "8 Cylinder",
     artist: "Sidhu Moose Wala",
     image: "/songs/artworks-FaSAtFr8Bi6ReK0J-Aeai1g-t500x500 (Custom).jpg",
@@ -33,15 +33,15 @@ const tracks = [
   },
   {
     bgColor: ["#5D1184", "#2E0A36"],
-    accentColor: '#0396FF',
+    accentColor: '#b35ede',
     name: "Thabba ku Zulfan",
     artist: "Arjan Dhillon",
     image: "https://cover.djpunjab.is/51902/300x700/thabba-ku-zulfan-arjan-dhillon.webp",
     path: "/songs/Thabba Ku Zulfan - Arjan Dhillon.mp3",
   },
   {
-    bgColor: ["#328E8C", "#358E8C"],
-    accentColor: '#328E8C',
+    bgColor: ["#35b2b0", "#1b403f"],
+    accentColor: '#63efed',
     name: "Salute",
     artist: "Arjan Dhillon",
     image: "https://cover.djpunjab.is/53392/300x700/salute-arjan-dhillon.webp",
