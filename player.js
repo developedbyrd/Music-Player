@@ -24,7 +24,7 @@ let isMuted = false;
 // Define tracks
 const tracks = [
   {
-    bgColor: ["#0396ff", "#0D1827"],
+    bgColor: ["#4F4F4F", "#222222"],
     accentColor: '#0396FF',
     name: "8 Cylinder",
     artist: "Sidhu Moose Wala",
@@ -32,7 +32,7 @@ const tracks = [
     path: "/songs/8 Cylinder - Sidhu Moose Wala.mp3",
   },
   {
-    bgColor: ["#5D1184", "#0D1827"],
+    bgColor: ["#5D1184", "#2E0A36"],
     accentColor: '#0396FF',
     name: "Thabba ku Zulfan",
     artist: "Arjan Dhillon",
@@ -40,7 +40,7 @@ const tracks = [
     path: "/songs/Thabba Ku Zulfan - Arjan Dhillon.mp3",
   },
   {
-    bgColor: ["#328E8C", "#0D1827"],
+    bgColor: ["#328E8C", "#358E8C"],
     accentColor: '#328E8C',
     name: "Salute",
     artist: "Arjan Dhillon",
