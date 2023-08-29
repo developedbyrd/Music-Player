@@ -144,6 +144,7 @@ volumeSlider.addEventListener("input", (e) => {
   trackSong.volume = volumeValue;
   volumeOutput.textContent = Math.round(volumeValue * 100);
   updateVolumeProgress();
+  updateVolumeSlider(e.target.value);
 });
 
 volumeSlider.style.setProperty('--volume-progress', parseFloat(volumeSlider.value) + '%');
@@ -155,6 +156,14 @@ timeSlider.addEventListener("input", (e) => {
   updateCurrentTime();
   updateTrackProgress();
 });
+
+function updateVolumeSlider(value) {
+  const volumeValue = parseFloat(value);
+  trackSong.volume = volumeValue / 100;
+  volumeOutput.textContent = Math.round(volumeValue);
+  volumeSlider.value = volumeValue;
+  volumeSlider.style.setProperty('--volume-progress', volumeValue + '%');
+}
 
 // Update track progress
 function updateTrackProgress() {
@@ -168,6 +177,7 @@ volumeIcon.addEventListener('click', () => {
 
   if (isMuted) {
     trackSong.volume = 0; // Mute the volume
+    updateVolumeSlider(0);
     updateVolumeProgress(); // Update the volume progress immediately
     volumeSlider.value = 0;
     volumeSlider.style.setProperty('--volume-progress', 0 + '%');
@@ -175,6 +185,7 @@ volumeIcon.addEventListener('click', () => {
   } else {
     // Unmute the volume and set it to 100%
     trackSong.volume = 1;
+    updateVolumeSlider(100);
     updateVolumeProgress(); // Update the volume progress immediately
     volumeSlider.value = 100;
     volumeSlider.style.setProperty('--volume-progress', 100 + '%');
