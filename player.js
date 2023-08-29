@@ -24,6 +24,7 @@ let isMuted = false;
 // Define tracks
 const tracks = [
   {
+    bgColor: ["#0396ff", "#0D1827"],
     accentColor: '#0396FF',
     name: "8 Cylinder",
     artist: "Sidhu Moose Wala",
@@ -31,6 +32,7 @@ const tracks = [
     path: "/songs/8 Cylinder - Sidhu Moose Wala.mp3",
   },
   {
+    bgColor: ["#5D1184", "#0D1827"],
     accentColor: '#0396FF',
     name: "Thabba ku Zulfan",
     artist: "Arjan Dhillon",
@@ -38,7 +40,8 @@ const tracks = [
     path: "/songs/Thabba Ku Zulfan - Arjan Dhillon.mp3",
   },
   {
-    accentColor: '#0396FF',
+    bgColor: ["#328E8C", "#0D1827"],
+    accentColor: '#328E8C',
     name: "Salute",
     artist: "Arjan Dhillon",
     image: "https://cover.djpunjab.is/53392/300x700/salute-arjan-dhillon.webp",
@@ -59,6 +62,7 @@ const loadTrackDetails = () => {
   const number = currentTrackIndex + 1;
   trackNum.innerText = number >= 10 ? number + "." : `0${number}.`;
   trackNum.style.color = currentTrack.accentColor;
+  document.body.style.background = `linear-gradient(to bottom, ${currentTrack.bgColor[0]}, ${currentTrack.bgColor[1]})`;
 };
 
 // Update current time display
